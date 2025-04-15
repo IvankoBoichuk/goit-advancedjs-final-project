@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/goit-advancedjs-final-project/assets/favicon-DPh7KmBi.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Energy</title>
+    <script type="module" crossorigin src="/goit-advancedjs-final-project/assets/vendor-BAoYjrW1.js"></script>
+    <script type="module" crossorigin src="/goit-advancedjs-final-project/assets/exercise-modal-DH61QMvY.js"></script>
+    <link rel="stylesheet" crossorigin href="/goit-advancedjs-final-project/assets/exercise-modal-CFgXJDG0.css">
+    <link rel="stylesheet" crossorigin href="/goit-advancedjs-final-project/assets/vendor-D_nxXpU-.css">
+    <link rel="stylesheet" crossorigin href="/goit-advancedjs-final-project/assets/favorites-Bmb39_pT.css">
+    <link rel="stylesheet" crossorigin href="/goit-advancedjs-final-project/assets/styles-D-dbHvSl.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container">
+    <nav class="nav">
+      <a class="logo" href="./" rel="noopener noreferrer" aria-label="YOUR ENERGY">
+        <svg width="132" height="24">
+          <use href="/goit-advancedjs-final-project/assets/icons-DMAIjxcC.svg#logo"></use>
+        </svg>
+      </a>
+      <div class="menu-items-wrap">
+        <ul class="menu-items router">
+          <li class="menu-item active">
+            <a href="./">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="favorites.html">Favorites</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="socials">
+        <li class="social-item">
+          <a href="https://www.facebook.com/goITclub/" rel="noopener noreferrer" target="_blank" aria-label="Link to Facebook">
+            <svg width="28" height="28">
+              <use href="/goit-advancedjs-final-project/assets/icons-DMAIjxcC.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://www.instagram.com/goitclub/" rel="noopener noreferrer" target="_blank" aria-label="Link to Instagram">
+            <svg width="28" height="28">
+              <use href="/goit-advancedjs-final-project/assets/icons-DMAIjxcC.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://www.youtube.com/c/GoIT" rel="noopener noreferrer" target="_blank" aria-label="Link to Youtube">
+            <svg width="28" height="28">
+              <use href="/goit-advancedjs-final-project/assets/icons-DMAIjxcC.svg#youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <button type="button" class="menu-btn" onclick="openMenu()">
+        <svg width="32" height="32">
+          <use href="/goit-advancedjs-final-project/assets/icons-DMAIjxcC.svg#menu"></use>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+    <div id="backdrop" class="backdrop" onclick="closeMenu()">
+  <div class="mobile-menu" onclick="menuLayoutClickHandler(event)">
+    <div class="btn-menu-wrap">
+      <button
+        type="button"
+        onclick="closeMenu()"
+        class="menu-close-button"
+        aria-label="Close mobile menu button"
+      >
+        <svg class="menu-close-icon" width="32" height="32">
+          <use href="/goit-advancedjs-final-project/assets/icons-DMAIjxcC.svg#icon-x_icon"></use>
+        </svg>
+      </button>
+    </div>
+    <ul class="menu-items">
+      <li class="menu-item" onclick="closeMenu()">
+        <a href="./index.html">Home</a>
+      </li>
+      <li class="menu-item" onclick="closeMenu()">
+        <a href="./favorites.html">Favorites</a>
+      </li>
+    </ul>
+
+    <ul class="socials">
+      <li class="social-item">
+        <a
+          href="https://www.facebook.com/goITclub/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Link to Facebook"
+        >
+          <svg class="social-icon" width="26" height="26">
+            <use href="/goit-advancedjs-final-project/assets/icons-DMAIjxcC.svg#facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-item">
+        <a
+          href="https://www.instagram.com/goitclub/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Link to Instagram"
+        >
+          <svg class="social-icon" width="26" height="26">
+            <use href="/goit-advancedjs-final-project/assets/icons-DMAIjxcC.svg#instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-item">
+        <a
+          href="https://www.youtube.com/c/GoIT"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Link to Youtube"
+        >
+          <svg class="social-icon" width="26" height="26">
+            <use href="/goit-advancedjs-final-project/assets/icons-DMAIjxcC.svg#youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    <main class="main-section">
+  <div class="container">
+    <!-- Exercise header -->
+    <div class="filter-header">
+      <!-- Filter Navigation -->
+      <div class="filter-path">
+        <h2 class="filter-path-start">Favorites</h2>
+      </div>
+    </div>
+
+    <div class="main-content-favourites">
+      <section class="sidebar-container-favoutite">
+  <div class="sidebar-quote-container">
+    <div class="sidebar-quote-ranner-icon-container">
+      <svg
+        class="sidebar-quote-ranner-svg"
+        viewBox="0 0 32 32"
+        height="30"
+        width="32"
+        aria-hidden="true"
+      >
+        <use x="0" y="0" href="/goit-advancedjs-final-project/assets/icons-DMAIjxcC.svg#icon-running"></use>
+      </svg>
+    </div>
+
+    <div class="sidebar-quote-wrapper">
+      <div class="sidebar-quote-title-wrapper">
+        <h3>Quote of the day</h3>
+        <svg
+          class="sidebar-quote-commas-svg"
+          viewBox="0 0 32 32"
+          width="24"
+          height="24"
+          aria-hidden="true"
+        >
+          <use x="0" y="0" href="/goit-advancedjs-final-project/assets/icons-DMAIjxcC.svg#icon-commas"></use>
+        </svg>
+      </div>
+      <div class="sidebar-quote"></div>
+      <div class="sidebar-quote-author"></div>
+    </div>
+  </div>
+  <div class="sidebar-sports-info">
+    <div class="sidebar-quote-dumbbell-svg-container">
+      <svg
+        class="sidebar-quote-dumbbell-svg"
+        viewBox="0 0 32 32"
+        height="30"
+        width="32"
+        aria-hidden="true"
+      >
+        <use x="0" y="0" href="/goit-advancedjs-final-project/assets/icons-DMAIjxcC.svg#icon-dumbbell"></use>
+      </svg>
+    </div>
+
+    <div class="sidebar-sports-wrapper">
+      <p class="sidebar-time">110 min</p>
+      <p class="sidebar-norm-sport">Daily norm of sports</p>
+      <p class="static-info">
+        The World Health Organization recommends at least 150 minutes of
+        moderate-intensity aerobic physical activity throughout the week for
+        adults aged 18-64. However, what happens if we adjust that number to 110
+        minutes every day? While it might seem like a high number to hit,
+        dedicating 110 minutes daily to sporting activities may offer
+        unparalleled benefits to physical health, mental well-being, and overall
+        quality of life.
+      </p>
+    </div>
+  </div>
+  <picture class="fav-picture">
+    <source
+      media="(min-width: 1440px)"
+      srcset="/goit-advancedjs-final-project/assets/favorites-des-1x-Bb0oo0j4.jpg 1x, /goit-advancedjs-final-project/assets/favorites-des-2x-DhKvZ5r2.jpg 2x"
+    />
+    <source
+      media="(min-width: 768px)"
+      srcset="/goit-advancedjs-final-project/assets/favorites-tab-1x-DYsPH-Wg.jpg 1x, /goit-advancedjs-final-project/assets/favorites-tab-2x-C8DXSBif.jpg 2x"
+    />
+    <img
+      class="sidebar-quote-image"
+      width="335"
+      height="242"
+      srcset="/goit-advancedjs-final-project/assets/favorites-mob-1x-B9N3fwCD.jpg 1x, /goit-advancedjs-final-project/assets/favorites-mob-2x-C5vXJpvL.jpg 2x"
+      src="/goit-advancedjs-final-project/assets/favorites-mob-1x-B9N3fwCD.jpg"
+      alt="sidebar-container"
+      loading="lazy"
+    />
+  </picture>
+</section>
+
+      <section id="favourites"></section>
+    </div>
+  </div>
+</main>
+
+    <div class="modal-overlay">
+  <div class="modal" id="exerciseModal">
+    <button class="modal-close">
+      <svg class="modal-close-icon">
+        <use href="/goit-advancedjs-final-project/assets/icons-DMAIjxcC.svg#icon-x_icon"></use>
+      </svg>
+    </button>
+    <div class="modal-body">
+      <!-- Сюди буде вставлятися вся динамічна розмітка -->
+    </div>
+  </div>
+</div>
+
+
+  </body>
+</html>
