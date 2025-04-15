@@ -5,7 +5,7 @@ import '/js/main-section/quote.js';
 import { NAME_OF_STORAGE, TEXT_IF_EMPTY } from './js/main-section/constants';
 import Exercise from './js/main-section/exercise';
 import { ExerciseModal } from './js/modal/exercise-modal';
-import { getExercisesFromStorage } from './js/favourites.js';
+import { getExercisesFromStorage, removeFavouritesFromStorage } from './js/favourites.js';
 
 let modalInstance = new ExerciseModal();
 
